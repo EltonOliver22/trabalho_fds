@@ -1,0 +1,181 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #e8e815;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+#trilha {
+    border-radius: 15px;
+    width: 339px;
+    height: 254px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    color: #2c3e50;
+}
+
+table tr:hover {
+    background-color: #f8f9fa;
+}
+
+table img {
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #e8e815;
+    background-color: #ecf0f1;
+    text-decoration: underline;
+}
+
+#motivationBtn {
+    background-color: #e8e815;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#motivationBtn:hover {
+    background-color: #9a9a0c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#motivationBtn:active {
+    transform: translateY(0);
+}
+
+#messageDiv {
+    background-color: #e8f5e8;
+    border: 2px solid #e8e815;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    animation: fadeIn 0.5s ease-in;
+}
+
+#motivationMessage {
+    color: #e8e815;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    #hobbyImage {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    table th, table td {
+        padding: 10px;
+    }
+}
